@@ -1,0 +1,4 @@
+{
+  "css":[<% for (var css in htmlWebpackPlugin.files.css) { %>"<%= htmlWebpackPlugin.files.css[css] %>",<% } %>],
+  "js":[<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>"<%= htmlWebpackPlugin.files.chunks[chunk].entry %>",<% } %>]
+}
