@@ -4,6 +4,5 @@
  */
 
 var app =process.env.app;
-console.log(app)
 var chunkConfig=require("./config/"+app+"Config.js");
 module.exports=chunkConfig;

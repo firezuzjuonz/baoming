@@ -1,13 +1,13 @@
 var path = require('path');
 //入口文件路径
-var viewFile=path.join(__dirname,"../src/apps/view/");
+var viewFile=path.join(__dirname,"../src/apps/views/");
 //php view文件路径
 var phpFile = "phpView";
 var jsonFile="json";
 //入口列表
 var chunkList=[
     //首页
-    {fileName:"app",chunk:"app"},
+    {fileName:"index",chunk:"index"},
 ];
 
 var config={
