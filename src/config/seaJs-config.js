@@ -6,7 +6,7 @@
     var arg = arguments[1];
     function testThrow(){ if(!arg)throw new Error("请在页面中传入staticUrl"); } try{ testThrow(); }catch(e){ alert(e); return false};
     var config = {
-        develop:false,
+        develop:true,
         config:function(){
             var vesion =  this.getVesion(); //版本号
             return {
@@ -19,10 +19,9 @@
                 base: "./libs",
                 alias: {
                     'common':'JS/common.js',
-                    'vue':'LIBS/vue/vue.min.js'
+                    'vue':'LIBS/vue/vue.min.js',
                 },//文件路径别名
                 common:[
-                    "common",
                     "vue"
                 ],//每个页面都需要加载的文件添加在这里
                 map: [
