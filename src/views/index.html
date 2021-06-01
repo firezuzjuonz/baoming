@@ -1,7 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <script type="text/javascript">
+        !function(){function e(){var e=document.documentElement.clientWidth, t=document.querySelector("html"), f = e>750?750/18.75:e/18.75;window.fontSize=f;t.style.fontSize=f+"px"}e(),window.addEventListener("resize",e)}();
+    </script>
+    <link rel="stylesheet" href="../css/index.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +20,7 @@
 <script src="../libs/seajs/sea-text-css.js"></script>
 <script src="../config/seaJs-config.js"></script>
 <script>
-  var staticUrl = window.location.origin + "/baoming/src";
+  var staticUrl = window.location.origin + "/src";
   seajs.seajsConfig("index.js",staticUrl);
 </script>
 </body>

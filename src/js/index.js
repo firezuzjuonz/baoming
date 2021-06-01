@@ -23,13 +23,32 @@ define(function(require, exports, module) {
           if(!this.Vm) this.Vm = new Vue({
               el: this.element,
               data: {
-                  message:""
+                 list:[]
               }
           });
         },
         VueInit: function(){
             var vm = this.Vm;
-            vm.message = 1;
+            vm.list = [
+                {
+                    name:"李云",
+                    age:23,
+                    image:"../images/head.jpg",
+                    link:"http://www.baidu.com"
+                },
+                {
+                    name:"李云",
+                    age:23,
+                    image:"../images/head.jpg",
+                    link:"http://www.baidu.com"
+                },
+                {
+                    name:"李云",
+                    age:23,
+                    image:"../images/head.jpg",
+                    link:"http://www.baidu.com"
+                }
+            ]
         }
     };
     homePage.init();

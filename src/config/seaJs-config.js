@@ -7,6 +7,7 @@
     function testThrow(){ if(!arg)throw new Error("请在页面中传入staticUrl"); } try{ testThrow(); }catch(e){ alert(e); return false};
     var config = {
         develop:true,
+        hotLoad:true,
         config:function(){
             var vesion =  this.getVesion(); //版本号
             return {
@@ -34,6 +35,7 @@
         init:function(){
             this.setConfig();
             this.setUse();
+            this.hot();
         },
         getVesion:function(){
             return (this.develop ? this.getRandomStr() : 'master1');
@@ -58,6 +60,11 @@
             seajs.use(this.getUse(),function(){
                 seajs.use('JS/' + entry );
             });
+        },
+        hot:function(){
+            if(this.hotLoad) document.write('<script src="http://' +
+                (location.host || 'localhost').split(':')[0] +
+                ':35729/livereload.js?snipver=1"></' + 'script>');
         }
     };
     config.init();

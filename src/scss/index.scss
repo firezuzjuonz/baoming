@@ -1,0 +1,30 @@
+@import "size";
+@import "reset";
+
+.home_page{
+   width: $_750;
+   height: 100%;
+
+
+}
+
+.teacher_list_li{
+  background-color: #fff;
+
+  margin: $_30 0;
+  padding: $_20;
+
+  a{
+    display: block;
+    overflow: hidden;
+  }
+}
+
+.teacher_avatar{
+  float: left;
+  height: $_240;
+  width: $_210;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
