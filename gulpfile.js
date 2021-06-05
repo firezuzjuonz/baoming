@@ -83,3 +83,5 @@ gulp.task('watchJs',function(){
 //定义默认任务
 gulp.task('run',['clean','sass','watchSass','watchJs','htmlWatch','tplWatch']);
 
+gulp.task('build',['miniJs','miniCss']);
+
