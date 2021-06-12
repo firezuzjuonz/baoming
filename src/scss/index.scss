@@ -1,11 +1,9 @@
-@import "size";
-@import "reset";
+@import "common";
+
 
 .home_page{
    width: $_750;
    height: 100%;
-
-
 }
 
 .teacher_list_li{
@@ -13,9 +11,9 @@
   margin: $_20 0;
   padding: $_20;
 
-  border: 1px solid #ececec;
+  //border: 1px solid #ececec;
 
-  a{
+  .teacher_content{
     display: block;
     overflow: hidden;
   }
@@ -23,9 +21,132 @@
 
 .teacher_avatar{
   float: left;
-  height: $_240;
-  width: $_210;
+  height: $_200;
+  width: $_200;
+  border: $_1 solid #f1f1f1;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: $_14;
+  margin-top: $_8;
+}
+
+.teacher_detail{
+  float: right;
+  margin-left:$_20 ;
+  width: $_470;
+}
+
+//左边信息
+.left_box{
+  width: $_470;
+
+  padding: $_14 0;
+
+
+  // 教师基本信息
+  .main_info{
+    width: $_334;
+
+    .teacher_base_info{
+      margin-bottom: $_13;
+    }
+    .industy_info{
+      font-size: $_22;
+      color: #999999;
+
+      li{
+        margin-bottom: $_13;
+      }
+    }
+  }
+
+
+  .teacher_name{
+    font-size: $_30;
+    font-weight: bold;
+    color: #58666e;
+    line-height: $_30;
+  }
+
+  .teacher_position{
+    line-height: $_30;
+    margin-left: $_20;
+    color: $color-green;
+
+    .is_charge{
+      color: #cccccc;
+    }
+  }
+
+
+//咨询部分
+  .chart_online{
+    width: $_136;
+    .remain_num{
+      color: #999999;
+
+      div{
+        margin-top: $_15;
+        font-size: $_20;
+        text-align: right;
+
+        span{
+          color: $color-green;
+          margin-left: $_10;
+        }
+      }
+    }
+
+    a{
+      display: block;
+      padding: $_16 $_20;
+      background: rgb(228,161,48);
+      border-radius: $_5;
+      color: #FFFFFF;
+      line-height: $_30;
+    }
+  }
+
+}
+
+
+//技能部分
+.teacher_skills{
+  border-top: $_1 solid #f1f1f1;
+  padding: $_14 0 0 0;
+
+
+  .type_name{
+    line-height: $_30;
+  }
+
+  .skills_list{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+     /* for internet explorer */
+    overflow:hidden;
+    width:100%;
+    height: $_56;
+    display:block;
+    li{
+      float: left;
+      line-height: $_30;
+    }
+  }
+}
+
+.become_to{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  a{
+    display: block;
+    width: 100%;
+    padding: $_34 0;
+    background: $color-green;
+    color: #FFFFFF;
+    font-size: $_30;
+  }
 }

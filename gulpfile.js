@@ -26,7 +26,7 @@ gulp.task('clean', function(cb) {
 
 //编译sass文件到 src/css
 gulp.task('sass',function () {
-    gulp.src(['src/scss/*.scss','!src/scss/size.scss','!src/scss/reset.scss']) //该任务针对的文件
+    gulp.src(['src/scss/*.scss','!src/scss/size.scss','!src/scss/reset.scss','!src/scss/common.scss']) //该任务针对的文件
         .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
         .pipe(sass({ style: 'expanded'})) //该任务调用的模块
         .pipe(gulp.dest('src/css'))

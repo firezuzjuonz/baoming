@@ -1,0 +1,47 @@
+@import "size";
+@import "reset";
+
+.clearfix {
+
+  *zoom: 1;
+
+}
+
+
+.clearfix:before,
+
+.clearfix:after {
+
+  display: table;
+
+  line-height: 0;
+
+  content: "";
+
+}
+
+
+
+.clearfix:after {
+
+  clear: both;
+
+}
+
+.f-l{
+  float: left;
+}
+.f-r{
+  float: right;
+}
+.m-r-none{
+  margin-right: 0 !important;
+}
+.m-b-none{
+  margin-bottom: 0 !important;
+}
+.m-t-none{
+  margin-top: 0 !important;
+}
+
+$color-green:rgb(81,182,78);
